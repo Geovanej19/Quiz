@@ -60,7 +60,7 @@ fun HomeScreen(vm: QuizViewModel, onStart: () -> Unit) {
                 focusedBorderColor = Color.Black,
                 unfocusedBorderColor = Color.Black,
                 focusedTextColor = Color.Black,
-                focusedLabelColor = Color.Blue,
+                focusedLabelColor = Color.Black,
                 unfocusedLabelColor = Color.Black,
                 cursorColor = Color.Black
             )
