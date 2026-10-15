@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
@@ -54,7 +55,15 @@ fun HomeScreen(vm: QuizViewModel, onStart: () -> Unit) {
             value = state.playerName,
             onValueChange = { vm.setName(it) },
             label = { Text("Seu nome") },
-            singleLine = true
+            singleLine = true,
+            colors = OutlinedTextFieldDefaults.colors(
+                focusedBorderColor = Color.Black,
+                unfocusedBorderColor = Color.Black,
+                focusedTextColor = Color.Black,
+                focusedLabelColor = Color.Blue,
+                unfocusedLabelColor = Color.Black,
+                cursorColor = Color.Black
+            )
         )
 
         Spacer(modifier = Modifier.height(24.dp))
